@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Drawing;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Pk3DSRNGTool.Controls;
-using Pk3DSRNGTool.RNG;
 using Pk3DSRNGTool.Core;
+using Pk3DSRNGTool.RNG;
 using static Pk3DSRNGTool.FormUtil;
 using static Pk3DSRNGTool.StringItem;
 
@@ -733,11 +733,15 @@ namespace Pk3DSRNGTool
 
             RNGMethod.TabPages[Method].Controls.Add(this.RNGInfo);
             RNGMethod.TabPages[Method].Controls.Add(this.Filters);
+            RNGMethod.TabPages[Method].Controls.Add(this.GB_CitraRNG);
             MainRNGEgg.Checked &= Method == 3;
             bool mainrngegg = Method == 3 && (MainRNGEgg.Checked || Gen6);
             RB_FrameRange.Checked = true;
 
-            // Contorls in RNGInfo
+            // Controls in CitraRNG
+            GB_EggRNG.Enabled = Method == 3 && _connected;
+
+            // Controls in RNGInfo
             AroundTarget.Visible = timedelaypanel.Visible = Method < 3 || mainrngegg;
             L_Correction.Visible = Correction.Visible = LinearDelay; // Not time-based shift
             L_Delay2.Visible = Delay2.Visible = gen7misc;
