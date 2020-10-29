@@ -298,6 +298,7 @@
             this.B_CitraConnect = new System.Windows.Forms.Button();
             this.L_CitraUpdateInterval = new System.Windows.Forms.Label();
             this.GB_MainRNG = new System.Windows.Forms.GroupBox();
+            this.B_CitraUseFrame = new System.Windows.Forms.Button();
             this.CitraFrameDifference = new System.Windows.Forms.TextBox();
             this.L_CitraNPC = new System.Windows.Forms.Label();
             this.CitraFrame = new System.Windows.Forms.TextBox();
@@ -3430,6 +3431,7 @@
             // 
             // GB_MainRNG
             // 
+            this.GB_MainRNG.Controls.Add(this.B_CitraUseFrame);
             this.GB_MainRNG.Controls.Add(this.CitraFrameDifference);
             this.GB_MainRNG.Controls.Add(this.L_CitraNPC);
             this.GB_MainRNG.Controls.Add(this.CitraFrame);
@@ -3450,6 +3452,17 @@
             this.GB_MainRNG.TabStop = false;
             this.GB_MainRNG.Text = "Main RNG";
             // 
+            // B_CitraUseFrame
+            // 
+            this.B_CitraUseFrame.Location = new System.Drawing.Point(23, 149);
+            this.B_CitraUseFrame.Margin = new System.Windows.Forms.Padding(2);
+            this.B_CitraUseFrame.Name = "B_CitraUseFrame";
+            this.B_CitraUseFrame.Size = new System.Drawing.Size(125, 23);
+            this.B_CitraUseFrame.TabIndex = 111;
+            this.B_CitraUseFrame.Text = "Use Frame";
+            this.B_CitraUseFrame.UseVisualStyleBackColor = true;
+            this.B_CitraUseFrame.Click += new System.EventHandler(this.B_CitraUseFrame_Click);
+            // 
             // CitraFrameDifference
             // 
             this.CitraFrameDifference.Font = new System.Drawing.Font("Consolas", 9F);
@@ -3462,12 +3475,12 @@
             // L_CitraNPC
             // 
             this.L_CitraNPC.AutoSize = true;
-            this.L_CitraNPC.Location = new System.Drawing.Point(42, 95);
+            this.L_CitraNPC.Location = new System.Drawing.Point(23, 96);
             this.L_CitraNPC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_CitraNPC.Name = "L_CitraNPC";
-            this.L_CitraNPC.Size = new System.Drawing.Size(32, 13);
+            this.L_CitraNPC.Size = new System.Drawing.Size(58, 13);
             this.L_CitraNPC.TabIndex = 109;
-            this.L_CitraNPC.Text = "NPC:";
+            this.L_CitraNPC.Text = "Frame Diff:";
             // 
             // CitraFrame
             // 
@@ -3517,7 +3530,7 @@
             // L_CitraInitialSeed
             // 
             this.L_CitraInitialSeed.AutoSize = true;
-            this.L_CitraInitialSeed.Location = new System.Drawing.Point(22, 14);
+            this.L_CitraInitialSeed.Location = new System.Drawing.Point(19, 14);
             this.L_CitraInitialSeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_CitraInitialSeed.Name = "L_CitraInitialSeed";
             this.L_CitraInitialSeed.Size = new System.Drawing.Size(62, 13);
@@ -3584,7 +3597,7 @@
             // 
             // B_CitraUseEggSeed
             // 
-            this.B_CitraUseEggSeed.Location = new System.Drawing.Point(23, 148);
+            this.B_CitraUseEggSeed.Location = new System.Drawing.Point(23, 176);
             this.B_CitraUseEggSeed.Name = "B_CitraUseEggSeed";
             this.B_CitraUseEggSeed.Size = new System.Drawing.Size(125, 23);
             this.B_CitraUseEggSeed.TabIndex = 111;
@@ -6137,6 +6150,7 @@
         private System.Windows.Forms.Label L_CitraEggReady;
         private System.Windows.Forms.TextBox CitraFrameDifference;
         private System.Windows.Forms.Label L_CitraNPC;
+        private System.Windows.Forms.Button B_CitraUseFrame;
     }
 }
 

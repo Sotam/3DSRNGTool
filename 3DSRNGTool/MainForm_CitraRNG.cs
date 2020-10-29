@@ -104,6 +104,12 @@
             GB_MainRNG.Enabled = false;
         }
 
+        private void B_CitraUseFrame_Click(object sender, EventArgs e)
+        {
+            if (decimal.TryParse(CitraFrame.Text, out var frame))
+                Frame_min.Value = frame;
+        }
+
         private void UpdateFrames()
         {
             try
