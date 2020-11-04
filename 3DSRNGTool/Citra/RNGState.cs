@@ -44,7 +44,7 @@
                     seed = SFMT.Nextulong();
                     frameCount++;
 
-                    if (frameCount > 2000000)
+                    if (frameCount > 5000000)
                         throw new FrameOutOfRangeException();
                 }
 

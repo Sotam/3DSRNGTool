@@ -57,7 +57,7 @@
         private void B_CitraViewPokemons_Click(object sender, EventArgs e)
         {
             var citraViewForm = new CitraViewForm(_gameState);
-            citraViewForm.Show();
+            citraViewForm.Show(this);
         }
 
         private void B_CitraUseInitialSeed_Click(object sender, EventArgs e)
