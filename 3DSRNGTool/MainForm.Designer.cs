@@ -139,9 +139,13 @@
             this.RNGPanel = new System.Windows.Forms.GroupBox();
             this.B_GetTiny = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
+            this.ID_Tiny2 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.label24 = new System.Windows.Forms.Label();
+            this.ID_Tiny3 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.label21 = new System.Windows.Forms.Label();
+            this.ID_Tiny0 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.label22 = new System.Windows.Forms.Label();
+            this.ID_Tiny1 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.Filter_ID = new System.Windows.Forms.GroupBox();
             this.Filter_FullID = new System.Windows.Forms.RadioButton();
             this.Filter_TID = new System.Windows.Forms.RadioButton();
@@ -158,7 +162,9 @@
             this.Parents_Info = new System.Windows.Forms.GroupBox();
             this.GB_EggSeed = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.Key0 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.Key1 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.B_Template = new System.Windows.Forms.Button();
             this.NidoType = new System.Windows.Forms.CheckBox();
             this.ConsiderOtherTSV = new System.Windows.Forms.CheckBox();
@@ -166,10 +172,14 @@
             this.B_Fast = new System.Windows.Forms.Button();
             this.MainRNGEgg = new System.Windows.Forms.CheckBox();
             this.TinyMT_Status = new System.Windows.Forms.GroupBox();
+            this.St3 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.B_Load = new System.Windows.Forms.Button();
+            this.St2 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.B_Backup = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.St1 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.St0 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.L_Egg_S = new System.Windows.Forms.Label();
@@ -214,6 +224,7 @@
             this.L_Ally = new System.Windows.Forms.Label();
             this.L_SOSRNGFrame = new System.Windows.Forms.Label();
             this.SOSRNGFrame = new System.Windows.Forms.NumericUpDown();
+            this.SOSRNGSeed = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.L_SOSRNGSeed = new System.Windows.Forms.Label();
             this.L_Lead = new System.Windows.Forms.Label();
             this.LeadAbility = new System.Windows.Forms.ComboBox();
@@ -250,6 +261,8 @@
             this.EventIV5 = new System.Windows.Forms.NumericUpDown();
             this.B_Open = new System.Windows.Forms.Button();
             this.Event_Forme = new System.Windows.Forms.ComboBox();
+            this.Event_PID = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.Event_EC = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.Event_Species = new System.Windows.Forms.ComboBox();
             this.Event_SID = new System.Windows.Forms.NumericUpDown();
             this.AbilityLocked = new System.Windows.Forms.CheckBox();
@@ -281,25 +294,45 @@
             this.L_Event_PID = new System.Windows.Forms.Label();
             this.TP_StationaryRNG = new System.Windows.Forms.TabPage();
             this.GB_CitraRNG = new System.Windows.Forms.GroupBox();
+            this.GB_TinyGen6 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.CitraTiny0 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.CitraTiny1 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.CitraTiny2 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.CitraTiny3 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.CitraInterval = new System.Windows.Forms.NumericUpDown();
             this.B_CitraConnect = new System.Windows.Forms.Button();
             this.L_CitraUpdateInterval = new System.Windows.Forms.Label();
             this.GB_MainRNG = new System.Windows.Forms.GroupBox();
+            this.Tip_TimeVar = new System.Windows.Forms.PictureBox();
+            this.CitraTimeVariable = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.CitraSaveVariable = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.B_CitraUseFrame = new System.Windows.Forms.Button();
             this.CitraFrameDifference = new System.Windows.Forms.TextBox();
             this.L_CitraNPC = new System.Windows.Forms.Label();
             this.CitraFrame = new System.Windows.Forms.TextBox();
+            this.CitraCurrentSeed = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.B_CitraViewPokemons = new System.Windows.Forms.Button();
             this.B_CitraUseInitialSeed = new System.Windows.Forms.Button();
             this.L_CitraInitialSeed = new System.Windows.Forms.Label();
             this.L_CitraCurrentSeed = new System.Windows.Forms.Label();
             this.L_CitraFrame = new System.Windows.Forms.Label();
+            this.CitraInitialSeed = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.GB_EggRNG = new System.Windows.Forms.GroupBox();
             this.B_CitraUseEggSeed = new System.Windows.Forms.Button();
             this.L_CitraEgg3 = new System.Windows.Forms.Label();
             this.L_CitraEgg2 = new System.Windows.Forms.Label();
             this.L_CitraEgg1 = new System.Windows.Forms.Label();
             this.L_CitraEgg0 = new System.Windows.Forms.Label();
+            this.CitraEggSeed0 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.CitraEggSeed1 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.CitraEggSeed2 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.CitraEggSeed3 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.L_CitraEggReadyYesNo = new System.Windows.Forms.Label();
             this.L_CitraEggReady = new System.Windows.Forms.Label();
             this.RNGInfo = new System.Windows.Forms.GroupBox();
@@ -352,6 +385,7 @@
             this.ShinyMark = new System.Windows.Forms.PictureBox();
             this.AssumeSynced = new System.Windows.Forms.CheckBox();
             this.L_GenderList = new System.Windows.Forms.Label();
+            this.GenderList = new Pk3DSRNGTool.Controls.GenderListBox();
             this.L_Targetmon = new System.Windows.Forms.Label();
             this.TargetMon = new System.Windows.Forms.NumericUpDown();
             this.B_OpenTool = new System.Windows.Forms.Button();
@@ -408,8 +442,11 @@
             this.B_IVInput = new System.Windows.Forms.Button();
             this.L_Ball = new System.Windows.Forms.Label();
             this.Ball = new System.Windows.Forms.ComboBox();
+            this.Slot = new Pk3DSRNGTool.Controls.CheckBoxComboBox();
             this.L_Slot = new System.Windows.Forms.Label();
             this.SpecialOnly = new System.Windows.Forms.CheckBox();
+            this.HiddenPower = new Pk3DSRNGTool.Controls.CheckBoxComboBox();
+            this.Nature = new Pk3DSRNGTool.Controls.CheckBoxComboBox();
             this.ShowStats = new System.Windows.Forms.CheckBox();
             this.Reset = new System.Windows.Forms.Button();
             this.ByIVs = new System.Windows.Forms.RadioButton();
@@ -445,29 +482,7 @@
             this.L_TRV = new System.Windows.Forms.Label();
             this.TRV = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
             this.Seed = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.CitraCurrentSeed = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.CitraInitialSeed = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.CitraEggSeed0 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.CitraEggSeed1 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.CitraEggSeed2 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.CitraEggSeed3 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.GenderList = new Pk3DSRNGTool.Controls.GenderListBox();
-            this.Slot = new Pk3DSRNGTool.Controls.CheckBoxComboBox();
-            this.HiddenPower = new Pk3DSRNGTool.Controls.CheckBoxComboBox();
-            this.Nature = new Pk3DSRNGTool.Controls.CheckBoxComboBox();
-            this.Event_PID = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.Event_EC = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.SOSRNGSeed = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.Key0 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.Key1 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.St3 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.St2 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.St1 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.St0 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.ID_Tiny2 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.ID_Tiny3 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.ID_Tiny0 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
-            this.ID_Tiny1 = new Pk3DSRNGTool.Controls.HexMaskedTextBox();
+            this.TimeVariableToolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.TSV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.DGVMS.SuspendLayout();
@@ -517,8 +532,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.Event_TID)).BeginInit();
             this.TP_StationaryRNG.SuspendLayout();
             this.GB_CitraRNG.SuspendLayout();
+            this.GB_TinyGen6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CitraInterval)).BeginInit();
             this.GB_MainRNG.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Tip_TimeVar)).BeginInit();
             this.GB_EggRNG.SuspendLayout();
             this.RNGInfo.SuspendLayout();
             this.LeapRangePanel.SuspendLayout();
@@ -580,7 +597,7 @@
             // 
             this.Advanced.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Advanced.AutoSize = true;
-            this.Advanced.Location = new System.Drawing.Point(1391, 15);
+            this.Advanced.Location = new System.Drawing.Point(1491, 15);
             this.Advanced.Name = "Advanced";
             this.Advanced.Size = new System.Drawing.Size(74, 17);
             this.Advanced.TabIndex = 86;
@@ -592,7 +609,7 @@
             // 
             this.ShinyCharm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ShinyCharm.AutoSize = true;
-            this.ShinyCharm.Location = new System.Drawing.Point(1316, 15);
+            this.ShinyCharm.Location = new System.Drawing.Point(1416, 15);
             this.ShinyCharm.Name = "ShinyCharm";
             this.ShinyCharm.Size = new System.Drawing.Size(74, 17);
             this.ShinyCharm.TabIndex = 85;
@@ -604,7 +621,7 @@
             // 
             this.L_TSV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.L_TSV.AutoSize = true;
-            this.L_TSV.Location = new System.Drawing.Point(1164, 17);
+            this.L_TSV.Location = new System.Drawing.Point(1264, 17);
             this.L_TSV.Name = "L_TSV";
             this.L_TSV.Size = new System.Drawing.Size(28, 13);
             this.L_TSV.TabIndex = 84;
@@ -614,7 +631,7 @@
             // 
             this.L_Seed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.L_Seed.AutoSize = true;
-            this.L_Seed.Location = new System.Drawing.Point(1062, 17);
+            this.L_Seed.Location = new System.Drawing.Point(1162, 17);
             this.L_Seed.Name = "L_Seed";
             this.L_Seed.Size = new System.Drawing.Size(32, 13);
             this.L_Seed.TabIndex = 83;
@@ -624,7 +641,7 @@
             // 
             this.TSV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.TSV.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TSV.Location = new System.Drawing.Point(1194, 12);
+            this.TSV.Location = new System.Drawing.Point(1294, 12);
             this.TSV.Maximum = new decimal(new int[] {
             4095,
             0,
@@ -709,7 +726,7 @@
             this.DGV.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DGV.RowTemplate.Height = 21;
             this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV.Size = new System.Drawing.Size(1461, 264);
+            this.DGV.Size = new System.Drawing.Size(1561, 264);
             this.DGV.TabIndex = 89;
             this.DGV.VirtualMode = true;
             this.DGV.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellMouseEnter);
@@ -1059,7 +1076,7 @@
             "Moon",
             "Ultra Sun",
             "Ultra Moon"});
-            this.Gameversion.Location = new System.Drawing.Point(981, 13);
+            this.Gameversion.Location = new System.Drawing.Point(1081, 13);
             this.Gameversion.Name = "Gameversion";
             this.Gameversion.Size = new System.Drawing.Size(78, 21);
             this.Gameversion.TabIndex = 91;
@@ -1069,7 +1086,7 @@
             // 
             this.L_GameVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.L_GameVersion.AutoSize = true;
-            this.L_GameVersion.Location = new System.Drawing.Point(908, 17);
+            this.L_GameVersion.Location = new System.Drawing.Point(1008, 17);
             this.L_GameVersion.Name = "L_GameVersion";
             this.L_GameVersion.Size = new System.Drawing.Size(55, 13);
             this.L_GameVersion.TabIndex = 90;
@@ -1100,7 +1117,7 @@
             this.DGV_ID.RowHeadersWidth = 18;
             this.DGV_ID.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DGV_ID.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_ID.Size = new System.Drawing.Size(1461, 264);
+            this.DGV_ID.Size = new System.Drawing.Size(1561, 264);
             this.DGV_ID.TabIndex = 92;
             this.DGV_ID.VirtualMode = true;
             this.DGV_ID.DragDrop += new System.Windows.Forms.DragEventHandler(this.DragDropWC);
@@ -1334,7 +1351,7 @@
             this.TP_IDRNG.Location = new System.Drawing.Point(4, 22);
             this.TP_IDRNG.Name = "TP_IDRNG";
             this.TP_IDRNG.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_IDRNG.Size = new System.Drawing.Size(1455, 538);
+            this.TP_IDRNG.Size = new System.Drawing.Size(1555, 538);
             this.TP_IDRNG.TabIndex = 4;
             this.TP_IDRNG.Text = "ID乱数";
             this.TP_IDRNG.UseVisualStyleBackColor = true;
@@ -1411,6 +1428,19 @@
             this.label23.TabIndex = 109;
             this.label23.Text = "[2]";
             // 
+            // ID_Tiny2
+            // 
+            this.ID_Tiny2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_Tiny2.Location = new System.Drawing.Point(60, 52);
+            this.ID_Tiny2.Mask = "AAAAAAAA";
+            this.ID_Tiny2.Name = "ID_Tiny2";
+            this.ID_Tiny2.Size = new System.Drawing.Size(64, 22);
+            this.ID_Tiny2.TabIndex = 106;
+            this.ID_Tiny2.Text = "00000000";
+            this.ID_Tiny2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ID_Tiny2.Value = ((uint)(0u));
+            this.ID_Tiny2.ValueUlong = ((ulong)(0ul));
+            // 
             // label24
             // 
             this.label24.AutoSize = true;
@@ -1420,6 +1450,19 @@
             this.label24.Size = new System.Drawing.Size(28, 14);
             this.label24.TabIndex = 108;
             this.label24.Text = "[3]";
+            // 
+            // ID_Tiny3
+            // 
+            this.ID_Tiny3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_Tiny3.Location = new System.Drawing.Point(60, 22);
+            this.ID_Tiny3.Mask = "AAAAAAAA";
+            this.ID_Tiny3.Name = "ID_Tiny3";
+            this.ID_Tiny3.Size = new System.Drawing.Size(64, 22);
+            this.ID_Tiny3.TabIndex = 107;
+            this.ID_Tiny3.Text = "00000000";
+            this.ID_Tiny3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ID_Tiny3.Value = ((uint)(0u));
+            this.ID_Tiny3.ValueUlong = ((ulong)(0ul));
             // 
             // label21
             // 
@@ -1431,6 +1474,19 @@
             this.label21.TabIndex = 105;
             this.label21.Text = "[0]";
             // 
+            // ID_Tiny0
+            // 
+            this.ID_Tiny0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_Tiny0.Location = new System.Drawing.Point(60, 112);
+            this.ID_Tiny0.Mask = "AAAAAAAA";
+            this.ID_Tiny0.Name = "ID_Tiny0";
+            this.ID_Tiny0.Size = new System.Drawing.Size(64, 22);
+            this.ID_Tiny0.TabIndex = 102;
+            this.ID_Tiny0.Text = "00000000";
+            this.ID_Tiny0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ID_Tiny0.Value = ((uint)(0u));
+            this.ID_Tiny0.ValueUlong = ((ulong)(0ul));
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -1440,6 +1496,19 @@
             this.label22.Size = new System.Drawing.Size(28, 14);
             this.label22.TabIndex = 104;
             this.label22.Text = "[1]";
+            // 
+            // ID_Tiny1
+            // 
+            this.ID_Tiny1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID_Tiny1.Location = new System.Drawing.Point(60, 82);
+            this.ID_Tiny1.Mask = "AAAAAAAA";
+            this.ID_Tiny1.Name = "ID_Tiny1";
+            this.ID_Tiny1.Size = new System.Drawing.Size(64, 22);
+            this.ID_Tiny1.TabIndex = 103;
+            this.ID_Tiny1.Text = "00000000";
+            this.ID_Tiny1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ID_Tiny1.Value = ((uint)(0u));
+            this.ID_Tiny1.ValueUlong = ((ulong)(0ul));
             // 
             // Filter_ID
             // 
@@ -1579,7 +1648,7 @@
             this.TP_EggRNG.Location = new System.Drawing.Point(4, 22);
             this.TP_EggRNG.Name = "TP_EggRNG";
             this.TP_EggRNG.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_EggRNG.Size = new System.Drawing.Size(1455, 538);
+            this.TP_EggRNG.Size = new System.Drawing.Size(1555, 538);
             this.TP_EggRNG.TabIndex = 3;
             this.TP_EggRNG.Text = "孵化乱数";
             this.TP_EggRNG.UseVisualStyleBackColor = true;
@@ -1654,6 +1723,20 @@
             this.label19.TabIndex = 101;
             this.label19.Text = "[0]";
             // 
+            // Key0
+            // 
+            this.Key0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Key0.Location = new System.Drawing.Point(47, 63);
+            this.Key0.Mask = "AAAAAAAA";
+            this.Key0.Name = "Key0";
+            this.Key0.Size = new System.Drawing.Size(64, 22);
+            this.Key0.TabIndex = 95;
+            this.Key0.Text = "00000000";
+            this.Key0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Key0.Value = ((uint)(0u));
+            this.Key0.ValueUlong = ((ulong)(0ul));
+            this.Key0.TextChanged += new System.EventHandler(this.Key_ValueChanged);
+            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -1663,6 +1746,20 @@
             this.label20.Size = new System.Drawing.Size(28, 14);
             this.label20.TabIndex = 100;
             this.label20.Text = "[1]";
+            // 
+            // Key1
+            // 
+            this.Key1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Key1.Location = new System.Drawing.Point(47, 33);
+            this.Key1.Mask = "AAAAAAAA";
+            this.Key1.Name = "Key1";
+            this.Key1.Size = new System.Drawing.Size(64, 22);
+            this.Key1.TabIndex = 94;
+            this.Key1.Text = "00000000";
+            this.Key1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Key1.Value = ((uint)(0u));
+            this.Key1.ValueUlong = ((ulong)(0ul));
+            this.Key1.TextChanged += new System.EventHandler(this.Key_ValueChanged);
             // 
             // B_Template
             // 
@@ -1748,6 +1845,20 @@
             this.TinyMT_Status.TabStop = false;
             this.TinyMT_Status.Text = "Status";
             // 
+            // St3
+            // 
+            this.St3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St3.Location = new System.Drawing.Point(50, 25);
+            this.St3.Mask = "AAAAAAAA";
+            this.St3.Name = "St3";
+            this.St3.Size = new System.Drawing.Size(64, 22);
+            this.St3.TabIndex = 92;
+            this.St3.Text = "00000000";
+            this.St3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.St3.Value = ((uint)(0u));
+            this.St3.ValueUlong = ((ulong)(0ul));
+            this.St3.TextChanged += new System.EventHandler(this.Status_ValueChanged);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -1769,6 +1880,20 @@
             this.B_Load.UseVisualStyleBackColor = true;
             this.B_Load.Click += new System.EventHandler(this.B_Load_Click);
             // 
+            // St2
+            // 
+            this.St2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St2.Location = new System.Drawing.Point(50, 53);
+            this.St2.Mask = "AAAAAAAA";
+            this.St2.Name = "St2";
+            this.St2.Size = new System.Drawing.Size(64, 22);
+            this.St2.TabIndex = 93;
+            this.St2.Text = "00000000";
+            this.St2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.St2.Value = ((uint)(0u));
+            this.St2.ValueUlong = ((ulong)(0ul));
+            this.St2.TextChanged += new System.EventHandler(this.Status_ValueChanged);
+            // 
             // B_Backup
             // 
             this.B_Backup.Image = global::Pk3DSRNGTool.Properties.Resources.Save;
@@ -1789,6 +1914,34 @@
             this.label11.TabIndex = 98;
             this.label11.Text = "[1]";
             this.label11.DoubleClick += new System.EventHandler(this.SyncGen7EggSeed);
+            // 
+            // St1
+            // 
+            this.St1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St1.Location = new System.Drawing.Point(50, 81);
+            this.St1.Mask = "AAAAAAAA";
+            this.St1.Name = "St1";
+            this.St1.Size = new System.Drawing.Size(64, 22);
+            this.St1.TabIndex = 94;
+            this.St1.Text = "00000000";
+            this.St1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.St1.Value = ((uint)(0u));
+            this.St1.ValueUlong = ((ulong)(0ul));
+            this.St1.TextChanged += new System.EventHandler(this.Status_ValueChanged);
+            // 
+            // St0
+            // 
+            this.St0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.St0.Location = new System.Drawing.Point(50, 110);
+            this.St0.Mask = "AAAAAAAA";
+            this.St0.Name = "St0";
+            this.St0.Size = new System.Drawing.Size(64, 22);
+            this.St0.TabIndex = 95;
+            this.St0.Text = "00000000";
+            this.St0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.St0.Value = ((uint)(0u));
+            this.St0.ValueUlong = ((ulong)(0ul));
+            this.St0.TextChanged += new System.EventHandler(this.Status_ValueChanged);
             // 
             // label8
             // 
@@ -2270,7 +2423,7 @@
             this.TP_WildRNG.Location = new System.Drawing.Point(4, 22);
             this.TP_WildRNG.Name = "TP_WildRNG";
             this.TP_WildRNG.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_WildRNG.Size = new System.Drawing.Size(1455, 538);
+            this.TP_WildRNG.Size = new System.Drawing.Size(1555, 538);
             this.TP_WildRNG.TabIndex = 2;
             this.TP_WildRNG.Text = "野生乱数";
             this.TP_WildRNG.UseVisualStyleBackColor = true;
@@ -2420,6 +2573,21 @@
             this.SOSRNGFrame.Size = new System.Drawing.Size(54, 22);
             this.SOSRNGFrame.TabIndex = 97;
             this.SOSRNGFrame.Visible = false;
+            // 
+            // SOSRNGSeed
+            // 
+            this.SOSRNGSeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SOSRNGSeed.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SOSRNGSeed.Location = new System.Drawing.Point(226, 155);
+            this.SOSRNGSeed.Mask = "AAAAAAAA";
+            this.SOSRNGSeed.Name = "SOSRNGSeed";
+            this.SOSRNGSeed.Size = new System.Drawing.Size(64, 22);
+            this.SOSRNGSeed.TabIndex = 117;
+            this.SOSRNGSeed.Text = "00000000";
+            this.SOSRNGSeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.SOSRNGSeed.Value = ((uint)(0u));
+            this.SOSRNGSeed.ValueUlong = ((ulong)(0ul));
+            this.SOSRNGSeed.Visible = false;
             // 
             // L_SOSRNGSeed
             // 
@@ -2695,7 +2863,7 @@
             this.TP_EventRNG.Location = new System.Drawing.Point(4, 22);
             this.TP_EventRNG.Name = "TP_EventRNG";
             this.TP_EventRNG.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_EventRNG.Size = new System.Drawing.Size(1455, 538);
+            this.TP_EventRNG.Size = new System.Drawing.Size(1555, 538);
             this.TP_EventRNG.TabIndex = 1;
             this.TP_EventRNG.Text = "配信乱数";
             this.TP_EventRNG.UseVisualStyleBackColor = true;
@@ -2852,6 +3020,34 @@
             this.Event_Forme.TabIndex = 96;
             this.Event_Forme.Visible = false;
             this.Event_Forme.SelectedIndexChanged += new System.EventHandler(this.Event_Forme_SelectedIndexChanged);
+            // 
+            // Event_PID
+            // 
+            this.Event_PID.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Event_PID.Location = new System.Drawing.Point(327, 203);
+            this.Event_PID.Mask = "AAAAAAAA";
+            this.Event_PID.Name = "Event_PID";
+            this.Event_PID.Size = new System.Drawing.Size(64, 22);
+            this.Event_PID.TabIndex = 92;
+            this.Event_PID.Text = "00000000";
+            this.Event_PID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Event_PID.Value = ((uint)(0u));
+            this.Event_PID.ValueUlong = ((ulong)(0ul));
+            this.Event_PID.Visible = false;
+            // 
+            // Event_EC
+            // 
+            this.Event_EC.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Event_EC.Location = new System.Drawing.Point(327, 241);
+            this.Event_EC.Mask = "AAAAAAAA";
+            this.Event_EC.Name = "Event_EC";
+            this.Event_EC.Size = new System.Drawing.Size(64, 22);
+            this.Event_EC.TabIndex = 93;
+            this.Event_EC.Text = "00000000";
+            this.Event_EC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Event_EC.Value = ((uint)(0u));
+            this.Event_EC.ValueUlong = ((ulong)(0ul));
+            this.Event_EC.Visible = false;
             // 
             // Event_Species
             // 
@@ -3184,13 +3380,14 @@
             this.TP_StationaryRNG.Location = new System.Drawing.Point(4, 22);
             this.TP_StationaryRNG.Name = "TP_StationaryRNG";
             this.TP_StationaryRNG.Padding = new System.Windows.Forms.Padding(3);
-            this.TP_StationaryRNG.Size = new System.Drawing.Size(1455, 538);
+            this.TP_StationaryRNG.Size = new System.Drawing.Size(1555, 538);
             this.TP_StationaryRNG.TabIndex = 0;
             this.TP_StationaryRNG.Text = "定点乱数";
             this.TP_StationaryRNG.UseVisualStyleBackColor = true;
             // 
             // GB_CitraRNG
             // 
+            this.GB_CitraRNG.Controls.Add(this.GB_TinyGen6);
             this.GB_CitraRNG.Controls.Add(this.CitraInterval);
             this.GB_CitraRNG.Controls.Add(this.B_CitraConnect);
             this.GB_CitraRNG.Controls.Add(this.L_CitraUpdateInterval);
@@ -3200,16 +3397,135 @@
             this.GB_CitraRNG.Margin = new System.Windows.Forms.Padding(2);
             this.GB_CitraRNG.Name = "GB_CitraRNG";
             this.GB_CitraRNG.Padding = new System.Windows.Forms.Padding(2);
-            this.GB_CitraRNG.Size = new System.Drawing.Size(376, 273);
+            this.GB_CitraRNG.Size = new System.Drawing.Size(475, 273);
             this.GB_CitraRNG.TabIndex = 94;
             this.GB_CitraRNG.TabStop = false;
             this.GB_CitraRNG.Text = "CitraRNG";
+            // 
+            // GB_TinyGen6
+            // 
+            this.GB_TinyGen6.Controls.Add(this.label18);
+            this.GB_TinyGen6.Controls.Add(this.label25);
+            this.GB_TinyGen6.Controls.Add(this.label26);
+            this.GB_TinyGen6.Controls.Add(this.label27);
+            this.GB_TinyGen6.Controls.Add(this.CitraTiny0);
+            this.GB_TinyGen6.Controls.Add(this.CitraTiny1);
+            this.GB_TinyGen6.Controls.Add(this.CitraTiny2);
+            this.GB_TinyGen6.Controls.Add(this.CitraTiny3);
+            this.GB_TinyGen6.Enabled = false;
+            this.GB_TinyGen6.Location = new System.Drawing.Point(211, 177);
+            this.GB_TinyGen6.Margin = new System.Windows.Forms.Padding(2);
+            this.GB_TinyGen6.Name = "GB_TinyGen6";
+            this.GB_TinyGen6.Padding = new System.Windows.Forms.Padding(2);
+            this.GB_TinyGen6.Size = new System.Drawing.Size(260, 92);
+            this.GB_TinyGen6.TabIndex = 112;
+            this.GB_TinyGen6.TabStop = false;
+            this.GB_TinyGen6.Text = "TinyMT - Gen 6";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(39, 25);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(19, 13);
+            this.label18.TabIndex = 110;
+            this.label18.Text = "[3]";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(134, 24);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(19, 13);
+            this.label25.TabIndex = 109;
+            this.label25.Text = "[2]";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(39, 53);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(19, 13);
+            this.label26.TabIndex = 108;
+            this.label26.Text = "[1]";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(134, 53);
+            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(19, 13);
+            this.label27.TabIndex = 107;
+            this.label27.Text = "[0]";
+            // 
+            // CitraTiny0
+            // 
+            this.CitraTiny0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CitraTiny0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraTiny0.Location = new System.Drawing.Point(158, 50);
+            this.CitraTiny0.Mask = "AAAAAAAA";
+            this.CitraTiny0.Name = "CitraTiny0";
+            this.CitraTiny0.ReadOnly = true;
+            this.CitraTiny0.Size = new System.Drawing.Size(64, 22);
+            this.CitraTiny0.TabIndex = 106;
+            this.CitraTiny0.Text = "00000000";
+            this.CitraTiny0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraTiny0.Value = ((uint)(0u));
+            this.CitraTiny0.ValueUlong = ((ulong)(0ul));
+            // 
+            // CitraTiny1
+            // 
+            this.CitraTiny1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CitraTiny1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraTiny1.Location = new System.Drawing.Point(63, 50);
+            this.CitraTiny1.Mask = "AAAAAAAA";
+            this.CitraTiny1.Name = "CitraTiny1";
+            this.CitraTiny1.ReadOnly = true;
+            this.CitraTiny1.Size = new System.Drawing.Size(64, 22);
+            this.CitraTiny1.TabIndex = 105;
+            this.CitraTiny1.Text = "00000000";
+            this.CitraTiny1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraTiny1.Value = ((uint)(0u));
+            this.CitraTiny1.ValueUlong = ((ulong)(0ul));
+            // 
+            // CitraTiny2
+            // 
+            this.CitraTiny2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraTiny2.Location = new System.Drawing.Point(158, 21);
+            this.CitraTiny2.Mask = "AAAAAAAA";
+            this.CitraTiny2.Name = "CitraTiny2";
+            this.CitraTiny2.ReadOnly = true;
+            this.CitraTiny2.Size = new System.Drawing.Size(64, 22);
+            this.CitraTiny2.TabIndex = 104;
+            this.CitraTiny2.Text = "00000000";
+            this.CitraTiny2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraTiny2.Value = ((uint)(0u));
+            this.CitraTiny2.ValueUlong = ((ulong)(0ul));
+            // 
+            // CitraTiny3
+            // 
+            this.CitraTiny3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CitraTiny3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraTiny3.Location = new System.Drawing.Point(63, 22);
+            this.CitraTiny3.Mask = "AAAAAAAA";
+            this.CitraTiny3.Name = "CitraTiny3";
+            this.CitraTiny3.ReadOnly = true;
+            this.CitraTiny3.Size = new System.Drawing.Size(64, 22);
+            this.CitraTiny3.TabIndex = 103;
+            this.CitraTiny3.Text = "00000000";
+            this.CitraTiny3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraTiny3.Value = ((uint)(0u));
+            this.CitraTiny3.ValueUlong = ((ulong)(0ul));
             // 
             // CitraInterval
             // 
             this.CitraInterval.DecimalPlaces = 2;
             this.CitraInterval.Enabled = false;
-            this.CitraInterval.Location = new System.Drawing.Point(213, 19);
+            this.CitraInterval.Location = new System.Drawing.Point(301, 32);
             this.CitraInterval.Maximum = new decimal(new int[] {
             10,
             0,
@@ -3231,10 +3547,10 @@
             // 
             // B_CitraConnect
             // 
-            this.B_CitraConnect.Location = new System.Drawing.Point(16, 16);
+            this.B_CitraConnect.Location = new System.Drawing.Point(222, 17);
             this.B_CitraConnect.Margin = new System.Windows.Forms.Padding(2);
             this.B_CitraConnect.Name = "B_CitraConnect";
-            this.B_CitraConnect.Size = new System.Drawing.Size(95, 23);
+            this.B_CitraConnect.Size = new System.Drawing.Size(55, 23);
             this.B_CitraConnect.TabIndex = 105;
             this.B_CitraConnect.Text = "Connect";
             this.B_CitraConnect.UseVisualStyleBackColor = true;
@@ -3243,7 +3559,7 @@
             // L_CitraUpdateInterval
             // 
             this.L_CitraUpdateInterval.AutoSize = true;
-            this.L_CitraUpdateInterval.Location = new System.Drawing.Point(163, 21);
+            this.L_CitraUpdateInterval.Location = new System.Drawing.Point(298, 15);
             this.L_CitraUpdateInterval.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_CitraUpdateInterval.Name = "L_CitraUpdateInterval";
             this.L_CitraUpdateInterval.Size = new System.Drawing.Size(45, 13);
@@ -3252,6 +3568,11 @@
             // 
             // GB_MainRNG
             // 
+            this.GB_MainRNG.Controls.Add(this.Tip_TimeVar);
+            this.GB_MainRNG.Controls.Add(this.CitraTimeVariable);
+            this.GB_MainRNG.Controls.Add(this.label17);
+            this.GB_MainRNG.Controls.Add(this.CitraSaveVariable);
+            this.GB_MainRNG.Controls.Add(this.label15);
             this.GB_MainRNG.Controls.Add(this.B_CitraUseFrame);
             this.GB_MainRNG.Controls.Add(this.CitraFrameDifference);
             this.GB_MainRNG.Controls.Add(this.L_CitraNPC);
@@ -3264,21 +3585,80 @@
             this.GB_MainRNG.Controls.Add(this.L_CitraFrame);
             this.GB_MainRNG.Controls.Add(this.CitraInitialSeed);
             this.GB_MainRNG.Enabled = false;
-            this.GB_MainRNG.Location = new System.Drawing.Point(16, 54);
+            this.GB_MainRNG.Location = new System.Drawing.Point(16, 17);
             this.GB_MainRNG.Margin = new System.Windows.Forms.Padding(2);
             this.GB_MainRNG.Name = "GB_MainRNG";
             this.GB_MainRNG.Padding = new System.Windows.Forms.Padding(2);
-            this.GB_MainRNG.Size = new System.Drawing.Size(170, 210);
+            this.GB_MainRNG.Size = new System.Drawing.Size(191, 247);
             this.GB_MainRNG.TabIndex = 103;
             this.GB_MainRNG.TabStop = false;
             this.GB_MainRNG.Text = "Main RNG";
             // 
+            // Tip_TimeVar
+            // 
+            this.Tip_TimeVar.Image = global::Pk3DSRNGTool.Properties.Resources.Info;
+            this.Tip_TimeVar.Location = new System.Drawing.Point(79, 160);
+            this.Tip_TimeVar.Name = "Tip_TimeVar";
+            this.Tip_TimeVar.Size = new System.Drawing.Size(16, 16);
+            this.Tip_TimeVar.TabIndex = 105;
+            this.Tip_TimeVar.TabStop = false;
+            // 
+            // CitraTimeVariable
+            // 
+            this.CitraTimeVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CitraTimeVariable.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraTimeVariable.Location = new System.Drawing.Point(86, 149);
+            this.CitraTimeVariable.Mask = "AAAAAAAA";
+            this.CitraTimeVariable.Name = "CitraTimeVariable";
+            this.CitraTimeVariable.ReadOnly = true;
+            this.CitraTimeVariable.Size = new System.Drawing.Size(75, 22);
+            this.CitraTimeVariable.TabIndex = 115;
+            this.CitraTimeVariable.Text = "00000000";
+            this.CitraTimeVariable.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraTimeVariable.Value = ((uint)(0u));
+            this.CitraTimeVariable.ValueUlong = ((ulong)(0ul));
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(23, 152);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(51, 13);
+            this.label17.TabIndex = 114;
+            this.label17.Text = "Time var:";
+            // 
+            // CitraSaveVariable
+            // 
+            this.CitraSaveVariable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CitraSaveVariable.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraSaveVariable.Location = new System.Drawing.Point(86, 121);
+            this.CitraSaveVariable.Mask = "AAAAAAAA";
+            this.CitraSaveVariable.Name = "CitraSaveVariable";
+            this.CitraSaveVariable.ReadOnly = true;
+            this.CitraSaveVariable.Size = new System.Drawing.Size(75, 22);
+            this.CitraSaveVariable.TabIndex = 113;
+            this.CitraSaveVariable.Text = "00000000";
+            this.CitraSaveVariable.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraSaveVariable.Value = ((uint)(0u));
+            this.CitraSaveVariable.ValueUlong = ((ulong)(0ul));
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(23, 124);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 13);
+            this.label15.TabIndex = 112;
+            this.label15.Text = "Save var:";
+            // 
             // B_CitraUseFrame
             // 
-            this.B_CitraUseFrame.Location = new System.Drawing.Point(23, 149);
+            this.B_CitraUseFrame.Location = new System.Drawing.Point(105, 191);
             this.B_CitraUseFrame.Margin = new System.Windows.Forms.Padding(2);
             this.B_CitraUseFrame.Name = "B_CitraUseFrame";
-            this.B_CitraUseFrame.Size = new System.Drawing.Size(125, 23);
+            this.B_CitraUseFrame.Size = new System.Drawing.Size(75, 23);
             this.B_CitraUseFrame.TabIndex = 111;
             this.B_CitraUseFrame.Text = "Use Frame";
             this.B_CitraUseFrame.UseVisualStyleBackColor = true;
@@ -3312,9 +3692,24 @@
             this.CitraFrame.Size = new System.Drawing.Size(75, 22);
             this.CitraFrame.TabIndex = 108;
             // 
+            // CitraCurrentSeed
+            // 
+            this.CitraCurrentSeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CitraCurrentSeed.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraCurrentSeed.Location = new System.Drawing.Point(86, 39);
+            this.CitraCurrentSeed.Mask = "AAAAAAAAAAAAAA";
+            this.CitraCurrentSeed.Name = "CitraCurrentSeed";
+            this.CitraCurrentSeed.ReadOnly = true;
+            this.CitraCurrentSeed.Size = new System.Drawing.Size(75, 22);
+            this.CitraCurrentSeed.TabIndex = 107;
+            this.CitraCurrentSeed.Text = "00000000000000";
+            this.CitraCurrentSeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraCurrentSeed.Value = ((uint)(0u));
+            this.CitraCurrentSeed.ValueUlong = ((ulong)(0ul));
+            // 
             // B_CitraViewPokemons
             // 
-            this.B_CitraViewPokemons.Location = new System.Drawing.Point(23, 177);
+            this.B_CitraViewPokemons.Location = new System.Drawing.Point(33, 219);
             this.B_CitraViewPokemons.Name = "B_CitraViewPokemons";
             this.B_CitraViewPokemons.Size = new System.Drawing.Size(125, 23);
             this.B_CitraViewPokemons.TabIndex = 103;
@@ -3324,10 +3719,10 @@
             // 
             // B_CitraUseInitialSeed
             // 
-            this.B_CitraUseInitialSeed.Location = new System.Drawing.Point(23, 120);
+            this.B_CitraUseInitialSeed.Location = new System.Drawing.Point(11, 191);
             this.B_CitraUseInitialSeed.Margin = new System.Windows.Forms.Padding(2);
             this.B_CitraUseInitialSeed.Name = "B_CitraUseInitialSeed";
-            this.B_CitraUseInitialSeed.Size = new System.Drawing.Size(125, 23);
+            this.B_CitraUseInitialSeed.Size = new System.Drawing.Size(89, 23);
             this.B_CitraUseInitialSeed.TabIndex = 102;
             this.B_CitraUseInitialSeed.Text = "Use Initial Seed";
             this.B_CitraUseInitialSeed.UseVisualStyleBackColor = true;
@@ -3363,6 +3758,21 @@
             this.L_CitraFrame.TabIndex = 2;
             this.L_CitraFrame.Text = "Frame:";
             // 
+            // CitraInitialSeed
+            // 
+            this.CitraInitialSeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CitraInitialSeed.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraInitialSeed.Location = new System.Drawing.Point(86, 11);
+            this.CitraInitialSeed.Mask = "AAAAAAAA";
+            this.CitraInitialSeed.Name = "CitraInitialSeed";
+            this.CitraInitialSeed.ReadOnly = true;
+            this.CitraInitialSeed.Size = new System.Drawing.Size(75, 22);
+            this.CitraInitialSeed.TabIndex = 99;
+            this.CitraInitialSeed.Text = "00000000";
+            this.CitraInitialSeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraInitialSeed.Value = ((uint)(0u));
+            this.CitraInitialSeed.ValueUlong = ((ulong)(0ul));
+            // 
             // GB_EggRNG
             // 
             this.GB_EggRNG.Controls.Add(this.B_CitraUseEggSeed);
@@ -3377,18 +3787,18 @@
             this.GB_EggRNG.Controls.Add(this.L_CitraEggReadyYesNo);
             this.GB_EggRNG.Controls.Add(this.L_CitraEggReady);
             this.GB_EggRNG.Enabled = false;
-            this.GB_EggRNG.Location = new System.Drawing.Point(190, 54);
+            this.GB_EggRNG.Location = new System.Drawing.Point(211, 54);
             this.GB_EggRNG.Margin = new System.Windows.Forms.Padding(2);
             this.GB_EggRNG.Name = "GB_EggRNG";
             this.GB_EggRNG.Padding = new System.Windows.Forms.Padding(2);
-            this.GB_EggRNG.Size = new System.Drawing.Size(170, 209);
+            this.GB_EggRNG.Size = new System.Drawing.Size(260, 122);
             this.GB_EggRNG.TabIndex = 102;
             this.GB_EggRNG.TabStop = false;
             this.GB_EggRNG.Text = "Egg RNG";
             // 
             // B_CitraUseEggSeed
             // 
-            this.B_CitraUseEggSeed.Location = new System.Drawing.Point(23, 176);
+            this.B_CitraUseEggSeed.Location = new System.Drawing.Point(68, 95);
             this.B_CitraUseEggSeed.Name = "B_CitraUseEggSeed";
             this.B_CitraUseEggSeed.Size = new System.Drawing.Size(125, 23);
             this.B_CitraUseEggSeed.TabIndex = 111;
@@ -3399,7 +3809,7 @@
             // L_CitraEgg3
             // 
             this.L_CitraEgg3.AutoSize = true;
-            this.L_CitraEgg3.Location = new System.Drawing.Point(54, 39);
+            this.L_CitraEgg3.Location = new System.Drawing.Point(30, 41);
             this.L_CitraEgg3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_CitraEgg3.Name = "L_CitraEgg3";
             this.L_CitraEgg3.Size = new System.Drawing.Size(19, 13);
@@ -3409,7 +3819,7 @@
             // L_CitraEgg2
             // 
             this.L_CitraEgg2.AutoSize = true;
-            this.L_CitraEgg2.Location = new System.Drawing.Point(54, 67);
+            this.L_CitraEgg2.Location = new System.Drawing.Point(125, 40);
             this.L_CitraEgg2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_CitraEgg2.Name = "L_CitraEgg2";
             this.L_CitraEgg2.Size = new System.Drawing.Size(19, 13);
@@ -3419,7 +3829,7 @@
             // L_CitraEgg1
             // 
             this.L_CitraEgg1.AutoSize = true;
-            this.L_CitraEgg1.Location = new System.Drawing.Point(54, 95);
+            this.L_CitraEgg1.Location = new System.Drawing.Point(30, 69);
             this.L_CitraEgg1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_CitraEgg1.Name = "L_CitraEgg1";
             this.L_CitraEgg1.Size = new System.Drawing.Size(19, 13);
@@ -3429,17 +3839,76 @@
             // L_CitraEgg0
             // 
             this.L_CitraEgg0.AutoSize = true;
-            this.L_CitraEgg0.Location = new System.Drawing.Point(54, 123);
+            this.L_CitraEgg0.Location = new System.Drawing.Point(125, 69);
             this.L_CitraEgg0.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_CitraEgg0.Name = "L_CitraEgg0";
             this.L_CitraEgg0.Size = new System.Drawing.Size(19, 13);
             this.L_CitraEgg0.TabIndex = 107;
             this.L_CitraEgg0.Text = "[0]";
             // 
+            // CitraEggSeed0
+            // 
+            this.CitraEggSeed0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CitraEggSeed0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraEggSeed0.Location = new System.Drawing.Point(149, 66);
+            this.CitraEggSeed0.Mask = "AAAAAAAA";
+            this.CitraEggSeed0.Name = "CitraEggSeed0";
+            this.CitraEggSeed0.ReadOnly = true;
+            this.CitraEggSeed0.Size = new System.Drawing.Size(64, 22);
+            this.CitraEggSeed0.TabIndex = 106;
+            this.CitraEggSeed0.Text = "00000000";
+            this.CitraEggSeed0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraEggSeed0.Value = ((uint)(0u));
+            this.CitraEggSeed0.ValueUlong = ((ulong)(0ul));
+            // 
+            // CitraEggSeed1
+            // 
+            this.CitraEggSeed1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CitraEggSeed1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraEggSeed1.Location = new System.Drawing.Point(54, 66);
+            this.CitraEggSeed1.Mask = "AAAAAAAA";
+            this.CitraEggSeed1.Name = "CitraEggSeed1";
+            this.CitraEggSeed1.ReadOnly = true;
+            this.CitraEggSeed1.Size = new System.Drawing.Size(64, 22);
+            this.CitraEggSeed1.TabIndex = 105;
+            this.CitraEggSeed1.Text = "00000000";
+            this.CitraEggSeed1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraEggSeed1.Value = ((uint)(0u));
+            this.CitraEggSeed1.ValueUlong = ((ulong)(0ul));
+            // 
+            // CitraEggSeed2
+            // 
+            this.CitraEggSeed2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraEggSeed2.Location = new System.Drawing.Point(149, 37);
+            this.CitraEggSeed2.Mask = "AAAAAAAA";
+            this.CitraEggSeed2.Name = "CitraEggSeed2";
+            this.CitraEggSeed2.ReadOnly = true;
+            this.CitraEggSeed2.Size = new System.Drawing.Size(64, 22);
+            this.CitraEggSeed2.TabIndex = 104;
+            this.CitraEggSeed2.Text = "00000000";
+            this.CitraEggSeed2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraEggSeed2.Value = ((uint)(0u));
+            this.CitraEggSeed2.ValueUlong = ((ulong)(0ul));
+            // 
+            // CitraEggSeed3
+            // 
+            this.CitraEggSeed3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CitraEggSeed3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CitraEggSeed3.Location = new System.Drawing.Point(54, 38);
+            this.CitraEggSeed3.Mask = "AAAAAAAA";
+            this.CitraEggSeed3.Name = "CitraEggSeed3";
+            this.CitraEggSeed3.ReadOnly = true;
+            this.CitraEggSeed3.Size = new System.Drawing.Size(64, 22);
+            this.CitraEggSeed3.TabIndex = 103;
+            this.CitraEggSeed3.Text = "00000000";
+            this.CitraEggSeed3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CitraEggSeed3.Value = ((uint)(0u));
+            this.CitraEggSeed3.ValueUlong = ((ulong)(0ul));
+            // 
             // L_CitraEggReadyYesNo
             // 
             this.L_CitraEggReadyYesNo.AutoSize = true;
-            this.L_CitraEggReadyYesNo.Location = new System.Drawing.Point(74, 15);
+            this.L_CitraEggReadyYesNo.Location = new System.Drawing.Point(71, 15);
             this.L_CitraEggReadyYesNo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_CitraEggReadyYesNo.Name = "L_CitraEggReadyYesNo";
             this.L_CitraEggReadyYesNo.Size = new System.Drawing.Size(59, 13);
@@ -3449,7 +3918,7 @@
             // L_CitraEggReady
             // 
             this.L_CitraEggReady.AutoSize = true;
-            this.L_CitraEggReady.Location = new System.Drawing.Point(11, 15);
+            this.L_CitraEggReady.Location = new System.Drawing.Point(8, 15);
             this.L_CitraEggReady.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.L_CitraEggReady.Name = "L_CitraEggReady";
             this.L_CitraEggReady.Size = new System.Drawing.Size(63, 13);
@@ -4087,6 +4556,15 @@
             this.L_GenderList.Size = new System.Drawing.Size(181, 13);
             this.L_GenderList.TabIndex = 105;
             this.L_GenderList.Text = "性别列表(0:无性别,1:有性别,2:梦幻)";
+            // 
+            // GenderList
+            // 
+            this.GenderList.Location = new System.Drawing.Point(225, 199);
+            this.GenderList.Mask = "00000000000000000000";
+            this.GenderList.Name = "GenderList";
+            this.GenderList.Size = new System.Drawing.Size(130, 20);
+            this.GenderList.TabIndex = 104;
+            this.GenderList.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // L_Targetmon
             // 
@@ -4794,6 +5272,31 @@
             this.Ball.Size = new System.Drawing.Size(74, 21);
             this.Ball.TabIndex = 93;
             // 
+            // Slot
+            // 
+            this.Slot.BlankText = null;
+            checkBoxProperties1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Slot.CheckBoxProperties = checkBoxProperties1;
+            this.Slot.DisplayMemberSingleItem = "";
+            this.Slot.DropDownHeight = 260;
+            this.Slot.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Slot.FormattingEnabled = true;
+            this.Slot.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.Slot.Location = new System.Drawing.Point(193, 78);
+            this.Slot.Name = "Slot";
+            this.Slot.Size = new System.Drawing.Size(74, 21);
+            this.Slot.TabIndex = 92;
+            // 
             // L_Slot
             // 
             this.L_Slot.AutoSize = true;
@@ -4814,6 +5317,34 @@
             this.SpecialOnly.UseVisualStyleBackColor = true;
             this.SpecialOnly.Visible = false;
             this.SpecialOnly.VisibleChanged += new System.EventHandler(this.VisibleTrigger);
+            // 
+            // HiddenPower
+            // 
+            this.HiddenPower.BlankText = null;
+            checkBoxProperties2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.HiddenPower.CheckBoxProperties = checkBoxProperties2;
+            this.HiddenPower.DisplayMemberSingleItem = "";
+            this.HiddenPower.DropDownHeight = 400;
+            this.HiddenPower.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.HiddenPower.FormattingEnabled = true;
+            this.HiddenPower.Location = new System.Drawing.Point(288, 112);
+            this.HiddenPower.Name = "HiddenPower";
+            this.HiddenPower.Size = new System.Drawing.Size(91, 21);
+            this.HiddenPower.TabIndex = 78;
+            // 
+            // Nature
+            // 
+            this.Nature.BlankText = "Any";
+            checkBoxProperties3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Nature.CheckBoxProperties = checkBoxProperties3;
+            this.Nature.DisplayMemberSingleItem = "";
+            this.Nature.DropDownHeight = 400;
+            this.Nature.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Nature.FormattingEnabled = true;
+            this.Nature.Location = new System.Drawing.Point(288, 163);
+            this.Nature.Name = "Nature";
+            this.Nature.Size = new System.Drawing.Size(91, 21);
+            this.Nature.TabIndex = 77;
             // 
             // ShowStats
             // 
@@ -5156,7 +5687,7 @@
             this.RNGMethod.Location = new System.Drawing.Point(12, 33);
             this.RNGMethod.Name = "RNGMethod";
             this.RNGMethod.SelectedIndex = 0;
-            this.RNGMethod.Size = new System.Drawing.Size(1463, 564);
+            this.RNGMethod.Size = new System.Drawing.Size(1563, 564);
             this.RNGMethod.TabIndex = 5;
             this.RNGMethod.SelectedIndexChanged += new System.EventHandler(this.RNGMethod_Changed);
             this.RNGMethod.DragDrop += new System.Windows.Forms.DragEventHandler(this.DragDropWC);
@@ -5176,7 +5707,7 @@
             "Moon",
             "Ultra Sun",
             "Ultra Moon"});
-            this.CB_Profile.Location = new System.Drawing.Point(786, 13);
+            this.CB_Profile.Location = new System.Drawing.Point(886, 13);
             this.CB_Profile.Name = "CB_Profile";
             this.CB_Profile.Size = new System.Drawing.Size(87, 21);
             this.CB_Profile.TabIndex = 95;
@@ -5185,7 +5716,7 @@
             // L_Profile
             // 
             this.L_Profile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.L_Profile.Location = new System.Drawing.Point(716, 16);
+            this.L_Profile.Location = new System.Drawing.Point(816, 16);
             this.L_Profile.Name = "L_Profile";
             this.L_Profile.Size = new System.Drawing.Size(64, 15);
             this.L_Profile.TabIndex = 94;
@@ -5195,7 +5726,7 @@
             // B_AddProfile
             // 
             this.B_AddProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.B_AddProfile.Location = new System.Drawing.Point(882, 13);
+            this.B_AddProfile.Location = new System.Drawing.Point(982, 13);
             this.B_AddProfile.Name = "B_AddProfile";
             this.B_AddProfile.Size = new System.Drawing.Size(20, 21);
             this.B_AddProfile.TabIndex = 96;
@@ -5207,7 +5738,7 @@
             // 
             this.L_TRV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.L_TRV.AutoSize = true;
-            this.L_TRV.Location = new System.Drawing.Point(1254, 17);
+            this.L_TRV.Location = new System.Drawing.Point(1354, 17);
             this.L_TRV.Name = "L_TRV";
             this.L_TRV.Size = new System.Drawing.Size(29, 13);
             this.L_TRV.TabIndex = 97;
@@ -5217,7 +5748,7 @@
             // 
             this.TRV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.TRV.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TRV.Location = new System.Drawing.Point(1286, 12);
+            this.TRV.Location = new System.Drawing.Point(1386, 12);
             this.TRV.Mask = "A";
             this.TRV.Name = "TRV";
             this.TRV.Size = new System.Drawing.Size(16, 22);
@@ -5232,7 +5763,7 @@
             // 
             this.Seed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Seed.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Seed.Location = new System.Drawing.Point(1094, 12);
+            this.Seed.Location = new System.Drawing.Point(1194, 12);
             this.Seed.Mask = "AAAAAAAA";
             this.Seed.Name = "Seed";
             this.Seed.Size = new System.Drawing.Size(64, 22);
@@ -5243,341 +5774,11 @@
             this.Seed.ValueUlong = ((ulong)(0ul));
             this.Seed.TextChanged += new System.EventHandler(this.Seed_ValueChanged);
             // 
-            // CitraCurrentSeed
-            // 
-            this.CitraCurrentSeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CitraCurrentSeed.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CitraCurrentSeed.Location = new System.Drawing.Point(86, 39);
-            this.CitraCurrentSeed.Mask = "AAAAAAAAAAAAAAAA";
-            this.CitraCurrentSeed.Name = "CitraCurrentSeed";
-            this.CitraCurrentSeed.ReadOnly = true;
-            this.CitraCurrentSeed.Size = new System.Drawing.Size(75, 22);
-            this.CitraCurrentSeed.TabIndex = 107;
-            this.CitraCurrentSeed.Text = "0000000000000000";
-            this.CitraCurrentSeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CitraCurrentSeed.Value = ((uint)(0u));
-            this.CitraCurrentSeed.ValueUlong = ((ulong)(0ul));
-            // 
-            // CitraInitialSeed
-            // 
-            this.CitraInitialSeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CitraInitialSeed.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CitraInitialSeed.Location = new System.Drawing.Point(86, 11);
-            this.CitraInitialSeed.Mask = "AAAAAAAA";
-            this.CitraInitialSeed.Name = "CitraInitialSeed";
-            this.CitraInitialSeed.ReadOnly = true;
-            this.CitraInitialSeed.Size = new System.Drawing.Size(75, 22);
-            this.CitraInitialSeed.TabIndex = 99;
-            this.CitraInitialSeed.Text = "00000000";
-            this.CitraInitialSeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CitraInitialSeed.Value = ((uint)(0u));
-            this.CitraInitialSeed.ValueUlong = ((ulong)(0ul));
-            // 
-            // CitraEggSeed0
-            // 
-            this.CitraEggSeed0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CitraEggSeed0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CitraEggSeed0.Location = new System.Drawing.Point(78, 120);
-            this.CitraEggSeed0.Mask = "AAAAAAAA";
-            this.CitraEggSeed0.Name = "CitraEggSeed0";
-            this.CitraEggSeed0.ReadOnly = true;
-            this.CitraEggSeed0.Size = new System.Drawing.Size(64, 22);
-            this.CitraEggSeed0.TabIndex = 106;
-            this.CitraEggSeed0.Text = "00000000";
-            this.CitraEggSeed0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CitraEggSeed0.Value = ((uint)(0u));
-            this.CitraEggSeed0.ValueUlong = ((ulong)(0ul));
-            // 
-            // CitraEggSeed1
-            // 
-            this.CitraEggSeed1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CitraEggSeed1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CitraEggSeed1.Location = new System.Drawing.Point(78, 92);
-            this.CitraEggSeed1.Mask = "AAAAAAAA";
-            this.CitraEggSeed1.Name = "CitraEggSeed1";
-            this.CitraEggSeed1.ReadOnly = true;
-            this.CitraEggSeed1.Size = new System.Drawing.Size(64, 22);
-            this.CitraEggSeed1.TabIndex = 105;
-            this.CitraEggSeed1.Text = "00000000";
-            this.CitraEggSeed1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CitraEggSeed1.Value = ((uint)(0u));
-            this.CitraEggSeed1.ValueUlong = ((ulong)(0ul));
-            // 
-            // CitraEggSeed2
-            // 
-            this.CitraEggSeed2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CitraEggSeed2.Location = new System.Drawing.Point(78, 64);
-            this.CitraEggSeed2.Mask = "AAAAAAAA";
-            this.CitraEggSeed2.Name = "CitraEggSeed2";
-            this.CitraEggSeed2.ReadOnly = true;
-            this.CitraEggSeed2.Size = new System.Drawing.Size(64, 22);
-            this.CitraEggSeed2.TabIndex = 104;
-            this.CitraEggSeed2.Text = "00000000";
-            this.CitraEggSeed2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CitraEggSeed2.Value = ((uint)(0u));
-            this.CitraEggSeed2.ValueUlong = ((ulong)(0ul));
-            // 
-            // CitraEggSeed3
-            // 
-            this.CitraEggSeed3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CitraEggSeed3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CitraEggSeed3.Location = new System.Drawing.Point(78, 36);
-            this.CitraEggSeed3.Mask = "AAAAAAAA";
-            this.CitraEggSeed3.Name = "CitraEggSeed3";
-            this.CitraEggSeed3.ReadOnly = true;
-            this.CitraEggSeed3.Size = new System.Drawing.Size(64, 22);
-            this.CitraEggSeed3.TabIndex = 103;
-            this.CitraEggSeed3.Text = "00000000";
-            this.CitraEggSeed3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.CitraEggSeed3.Value = ((uint)(0u));
-            this.CitraEggSeed3.ValueUlong = ((ulong)(0ul));
-            // 
-            // GenderList
-            // 
-            this.GenderList.Location = new System.Drawing.Point(225, 199);
-            this.GenderList.Mask = "00000000000000000000";
-            this.GenderList.Name = "GenderList";
-            this.GenderList.Size = new System.Drawing.Size(130, 20);
-            this.GenderList.TabIndex = 104;
-            this.GenderList.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Slot
-            // 
-            this.Slot.BlankText = null;
-            checkBoxProperties1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Slot.CheckBoxProperties = checkBoxProperties1;
-            this.Slot.DisplayMemberSingleItem = "";
-            this.Slot.DropDownHeight = 260;
-            this.Slot.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Slot.FormattingEnabled = true;
-            this.Slot.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.Slot.Location = new System.Drawing.Point(193, 78);
-            this.Slot.Name = "Slot";
-            this.Slot.Size = new System.Drawing.Size(74, 21);
-            this.Slot.TabIndex = 92;
-            // 
-            // HiddenPower
-            // 
-            this.HiddenPower.BlankText = null;
-            checkBoxProperties2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.HiddenPower.CheckBoxProperties = checkBoxProperties2;
-            this.HiddenPower.DisplayMemberSingleItem = "";
-            this.HiddenPower.DropDownHeight = 400;
-            this.HiddenPower.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.HiddenPower.FormattingEnabled = true;
-            this.HiddenPower.Location = new System.Drawing.Point(288, 112);
-            this.HiddenPower.Name = "HiddenPower";
-            this.HiddenPower.Size = new System.Drawing.Size(91, 21);
-            this.HiddenPower.TabIndex = 78;
-            // 
-            // Nature
-            // 
-            this.Nature.BlankText = "Any";
-            checkBoxProperties3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Nature.CheckBoxProperties = checkBoxProperties3;
-            this.Nature.DisplayMemberSingleItem = "";
-            this.Nature.DropDownHeight = 400;
-            this.Nature.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Nature.FormattingEnabled = true;
-            this.Nature.Location = new System.Drawing.Point(288, 163);
-            this.Nature.Name = "Nature";
-            this.Nature.Size = new System.Drawing.Size(91, 21);
-            this.Nature.TabIndex = 77;
-            // 
-            // Event_PID
-            // 
-            this.Event_PID.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Event_PID.Location = new System.Drawing.Point(327, 203);
-            this.Event_PID.Mask = "AAAAAAAA";
-            this.Event_PID.Name = "Event_PID";
-            this.Event_PID.Size = new System.Drawing.Size(64, 22);
-            this.Event_PID.TabIndex = 92;
-            this.Event_PID.Text = "00000000";
-            this.Event_PID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Event_PID.Value = ((uint)(0u));
-            this.Event_PID.ValueUlong = ((ulong)(0ul));
-            this.Event_PID.Visible = false;
-            // 
-            // Event_EC
-            // 
-            this.Event_EC.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Event_EC.Location = new System.Drawing.Point(327, 241);
-            this.Event_EC.Mask = "AAAAAAAA";
-            this.Event_EC.Name = "Event_EC";
-            this.Event_EC.Size = new System.Drawing.Size(64, 22);
-            this.Event_EC.TabIndex = 93;
-            this.Event_EC.Text = "00000000";
-            this.Event_EC.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Event_EC.Value = ((uint)(0u));
-            this.Event_EC.ValueUlong = ((ulong)(0ul));
-            this.Event_EC.Visible = false;
-            // 
-            // SOSRNGSeed
-            // 
-            this.SOSRNGSeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SOSRNGSeed.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SOSRNGSeed.Location = new System.Drawing.Point(226, 155);
-            this.SOSRNGSeed.Mask = "AAAAAAAA";
-            this.SOSRNGSeed.Name = "SOSRNGSeed";
-            this.SOSRNGSeed.Size = new System.Drawing.Size(64, 22);
-            this.SOSRNGSeed.TabIndex = 117;
-            this.SOSRNGSeed.Text = "00000000";
-            this.SOSRNGSeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.SOSRNGSeed.Value = ((uint)(0u));
-            this.SOSRNGSeed.ValueUlong = ((ulong)(0ul));
-            this.SOSRNGSeed.Visible = false;
-            // 
-            // Key0
-            // 
-            this.Key0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Key0.Location = new System.Drawing.Point(47, 63);
-            this.Key0.Mask = "AAAAAAAA";
-            this.Key0.Name = "Key0";
-            this.Key0.Size = new System.Drawing.Size(64, 22);
-            this.Key0.TabIndex = 95;
-            this.Key0.Text = "00000000";
-            this.Key0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Key0.Value = ((uint)(0u));
-            this.Key0.ValueUlong = ((ulong)(0ul));
-            this.Key0.TextChanged += new System.EventHandler(this.Key_ValueChanged);
-            // 
-            // Key1
-            // 
-            this.Key1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Key1.Location = new System.Drawing.Point(47, 33);
-            this.Key1.Mask = "AAAAAAAA";
-            this.Key1.Name = "Key1";
-            this.Key1.Size = new System.Drawing.Size(64, 22);
-            this.Key1.TabIndex = 94;
-            this.Key1.Text = "00000000";
-            this.Key1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Key1.Value = ((uint)(0u));
-            this.Key1.ValueUlong = ((ulong)(0ul));
-            this.Key1.TextChanged += new System.EventHandler(this.Key_ValueChanged);
-            // 
-            // St3
-            // 
-            this.St3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.St3.Location = new System.Drawing.Point(50, 25);
-            this.St3.Mask = "AAAAAAAA";
-            this.St3.Name = "St3";
-            this.St3.Size = new System.Drawing.Size(64, 22);
-            this.St3.TabIndex = 92;
-            this.St3.Text = "00000000";
-            this.St3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.St3.Value = ((uint)(0u));
-            this.St3.ValueUlong = ((ulong)(0ul));
-            this.St3.TextChanged += new System.EventHandler(this.Status_ValueChanged);
-            // 
-            // St2
-            // 
-            this.St2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.St2.Location = new System.Drawing.Point(50, 53);
-            this.St2.Mask = "AAAAAAAA";
-            this.St2.Name = "St2";
-            this.St2.Size = new System.Drawing.Size(64, 22);
-            this.St2.TabIndex = 93;
-            this.St2.Text = "00000000";
-            this.St2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.St2.Value = ((uint)(0u));
-            this.St2.ValueUlong = ((ulong)(0ul));
-            this.St2.TextChanged += new System.EventHandler(this.Status_ValueChanged);
-            // 
-            // St1
-            // 
-            this.St1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.St1.Location = new System.Drawing.Point(50, 81);
-            this.St1.Mask = "AAAAAAAA";
-            this.St1.Name = "St1";
-            this.St1.Size = new System.Drawing.Size(64, 22);
-            this.St1.TabIndex = 94;
-            this.St1.Text = "00000000";
-            this.St1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.St1.Value = ((uint)(0u));
-            this.St1.ValueUlong = ((ulong)(0ul));
-            this.St1.TextChanged += new System.EventHandler(this.Status_ValueChanged);
-            // 
-            // St0
-            // 
-            this.St0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.St0.Location = new System.Drawing.Point(50, 110);
-            this.St0.Mask = "AAAAAAAA";
-            this.St0.Name = "St0";
-            this.St0.Size = new System.Drawing.Size(64, 22);
-            this.St0.TabIndex = 95;
-            this.St0.Text = "00000000";
-            this.St0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.St0.Value = ((uint)(0u));
-            this.St0.ValueUlong = ((ulong)(0ul));
-            this.St0.TextChanged += new System.EventHandler(this.Status_ValueChanged);
-            // 
-            // ID_Tiny2
-            // 
-            this.ID_Tiny2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_Tiny2.Location = new System.Drawing.Point(60, 52);
-            this.ID_Tiny2.Mask = "AAAAAAAA";
-            this.ID_Tiny2.Name = "ID_Tiny2";
-            this.ID_Tiny2.Size = new System.Drawing.Size(64, 22);
-            this.ID_Tiny2.TabIndex = 106;
-            this.ID_Tiny2.Text = "00000000";
-            this.ID_Tiny2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ID_Tiny2.Value = ((uint)(0u));
-            this.ID_Tiny2.ValueUlong = ((ulong)(0ul));
-            // 
-            // ID_Tiny3
-            // 
-            this.ID_Tiny3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_Tiny3.Location = new System.Drawing.Point(60, 22);
-            this.ID_Tiny3.Mask = "AAAAAAAA";
-            this.ID_Tiny3.Name = "ID_Tiny3";
-            this.ID_Tiny3.Size = new System.Drawing.Size(64, 22);
-            this.ID_Tiny3.TabIndex = 107;
-            this.ID_Tiny3.Text = "00000000";
-            this.ID_Tiny3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ID_Tiny3.Value = ((uint)(0u));
-            this.ID_Tiny3.ValueUlong = ((ulong)(0ul));
-            // 
-            // ID_Tiny0
-            // 
-            this.ID_Tiny0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_Tiny0.Location = new System.Drawing.Point(60, 112);
-            this.ID_Tiny0.Mask = "AAAAAAAA";
-            this.ID_Tiny0.Name = "ID_Tiny0";
-            this.ID_Tiny0.Size = new System.Drawing.Size(64, 22);
-            this.ID_Tiny0.TabIndex = 102;
-            this.ID_Tiny0.Text = "00000000";
-            this.ID_Tiny0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ID_Tiny0.Value = ((uint)(0u));
-            this.ID_Tiny0.ValueUlong = ((ulong)(0ul));
-            // 
-            // ID_Tiny1
-            // 
-            this.ID_Tiny1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID_Tiny1.Location = new System.Drawing.Point(60, 82);
-            this.ID_Tiny1.Mask = "AAAAAAAA";
-            this.ID_Tiny1.Name = "ID_Tiny1";
-            this.ID_Tiny1.Size = new System.Drawing.Size(64, 22);
-            this.ID_Tiny1.TabIndex = 103;
-            this.ID_Tiny1.Text = "00000000";
-            this.ID_Tiny1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ID_Tiny1.Value = ((uint)(0u));
-            this.ID_Tiny1.ValueUlong = ((ulong)(0ul));
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1484, 612);
+            this.ClientSize = new System.Drawing.Size(1584, 612);
             this.Controls.Add(this.TRV);
             this.Controls.Add(this.L_TRV);
             this.Controls.Add(this.B_AddProfile);
@@ -5663,9 +5864,12 @@
             this.TP_StationaryRNG.ResumeLayout(false);
             this.GB_CitraRNG.ResumeLayout(false);
             this.GB_CitraRNG.PerformLayout();
+            this.GB_TinyGen6.ResumeLayout(false);
+            this.GB_TinyGen6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CitraInterval)).EndInit();
             this.GB_MainRNG.ResumeLayout(false);
             this.GB_MainRNG.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Tip_TimeVar)).EndInit();
             this.GB_EggRNG.ResumeLayout(false);
             this.GB_EggRNG.PerformLayout();
             this.RNGInfo.ResumeLayout(false);
@@ -6151,6 +6355,21 @@
         private System.Windows.Forms.TextBox CitraFrameDifference;
         private System.Windows.Forms.Label L_CitraNPC;
         private System.Windows.Forms.Button B_CitraUseFrame;
+        private Controls.HexMaskedTextBox CitraTimeVariable;
+        private System.Windows.Forms.Label label17;
+        private Controls.HexMaskedTextBox CitraSaveVariable;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.GroupBox GB_TinyGen6;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private Controls.HexMaskedTextBox CitraTiny0;
+        private Controls.HexMaskedTextBox CitraTiny1;
+        private Controls.HexMaskedTextBox CitraTiny2;
+        private Controls.HexMaskedTextBox CitraTiny3;
+        private System.Windows.Forms.PictureBox Tip_TimeVar;
+        private System.Windows.Forms.ToolTip TimeVariableToolTip;
     }
 }
 

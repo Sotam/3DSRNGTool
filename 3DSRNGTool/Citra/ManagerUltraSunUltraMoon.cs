@@ -1,19 +1,9 @@
 ﻿namespace Pk3DSRNGTool.Citra
 {
-    using System.Collections.Generic;
     using Magnetosphere;
 
-    public class GameStateUltraSunUltraMoon : GameState
+    public class ManagerUltraSunUltraMoon : Manager7
     {
-        public GameStateUltraSunUltraMoon(IDeviceRW device) : base(device)
-        {
-            Main.SFMTAddressSeed = SeedAddress;
-            Main.SFMTAddressStart = SfmtStart;
-            Main.SFMTAddressIndex = SfmtIndex;
-
-            Main.Initialize(Device);
-        }
-
         public override ulong PartyAddress { get; } = 0x33F7FA44;
         public override ulong WildAddress { get; } = 0x3002F9A0;
         public override ulong SosAddress { get; } = 0x3002F9A0;
@@ -32,14 +22,9 @@
         public override ulong Parent1Address { get; } = 0x3307B011;
         public override ulong Parent2Address { get; } = 0x3307B0FA;
 
-        public override IList<uint> GetEggSeeds()
+        public ManagerUltraSunUltraMoon(IDeviceRW device)
+            : base(device)
         {
-            var eggSeed0 = Device.ReadUInt32(EggAddress);
-            var eggSeed1 = Device.ReadUInt32(EggAddress + 4);
-            var eggSeed2 = Device.ReadUInt32(EggAddress + 8);
-            var eggSeed3 = Device.ReadUInt32(EggAddress + 12);
-
-            return new[] { eggSeed0, eggSeed1, eggSeed2, eggSeed3 };
         }
     }
 }

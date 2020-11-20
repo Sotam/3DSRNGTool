@@ -94,9 +94,12 @@
     <Compile Include="CitraViewForm.Designer.cs">
       <DependentUpon>CitraViewForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Citra\GameState.cs" />
-    <Compile Include="Citra\GameStateUltraSunUltraMoon.cs" />
-    <Compile Include="Citra\RNGState.cs" />
+    <Compile Include="Citra\IManager.cs" />
+    <Compile Include="Citra\Manager6.cs" />
+    <Compile Include="Citra\Manager7.cs" />
+    <Compile Include="Citra\ManagerOmegaRubyAlphaSapphire.cs" />
+    <Compile Include="Citra\ManagerUltraSunUltraMoon.cs" />
+    <Compile Include="Citra\ManagerXY.cs" />
     <Compile Include="Controls\Frame.cs" />
     <Compile Include="Controls\Frame_ID.cs" />
     <Compile Include="Controls\Frame_Misc.cs" />
@@ -229,6 +232,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RNG\CitraMT.cs" />
     <Compile Include="Subforms\Gen6MTSeedFinder.cs">
       <SubType>Form</SubType>
     </Compile>

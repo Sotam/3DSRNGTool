@@ -14,7 +14,7 @@
         private bool _connected;
 
         private uint _initialSeed;
-        private GameState _gameState;
+        private IManager _gameState;
 
         private Thread _updateFramesThread;
 
@@ -25,7 +25,7 @@
             try
             {
                 // Validate if game is supported
-                var validGames = new[] { "Ultra Sun", "Ultra Moon" };
+                var validGames = new[] { "X", "Y", "OR", "AS", "Ultra Sun", "Ultra Moon" };
                 var gameVersion = Gameversion.SelectedItem.ToString();
 
                 if (!validGames.Any(g => string.Equals(g, gameVersion, StringComparison.InvariantCultureIgnoreCase)))
@@ -67,10 +67,18 @@
 
         private void B_CitraUseEggSeed_Click(object sender, EventArgs e)
         {
-            St0.Value = CitraEggSeed0.Value;
-            St1.Value = CitraEggSeed1.Value;
-            St2.Value = CitraEggSeed2.Value;
-            St3.Value = CitraEggSeed3.Value;
+            if (Gen6)
+            {
+                Key0.Value = CitraEggSeed0.Value;
+                Key1.Value = CitraEggSeed1.Value;
+            }
+            else
+            {
+                St0.Value = CitraEggSeed0.Value;
+                St1.Value = CitraEggSeed1.Value;
+                St2.Value = CitraEggSeed2.Value;
+                St3.Value = CitraEggSeed3.Value;
+            }
         }
 
         private void ConnectCitra()
@@ -145,7 +153,7 @@
             }
             else
             {
-                _gameState.Update();
+                _gameState.UpdateFrame();
 
                 _initialSeed = _gameState.InitialSeed;
 
@@ -154,24 +162,46 @@
                 CitraFrame.Text = _gameState.FrameCount.ToString("N0");
                 CitraFrameDifference.Text = _gameState.FrameDifference.ToString("N0");
 
-                L_CitraEggReadyYesNo.Text = _gameState.EggReady ? "Egg ready" : "No egg yet";
+                L_CitraEggReadyYesNo.Text = _gameState.EggReady() ? "Egg ready" : "No egg yet";
 
-                CitraEggSeed0.Value = _gameState.EggSeeds[0];
-                CitraEggSeed1.Value = _gameState.EggSeeds[1];
-                CitraEggSeed2.Value = _gameState.EggSeeds[2];
-                CitraEggSeed3.Value = _gameState.EggSeeds[3];
+                var eggSeeds = _gameState.GetEggSeeds();
+                CitraEggSeed0.Value = eggSeeds[0];
+                CitraEggSeed1.Value = eggSeeds[1];
+
+                if (Gen6)
+                {
+                    var tinyMT = _gameState.GetTinyMT;
+                    CitraTiny0.Value = tinyMT[0];
+                    CitraTiny1.Value = tinyMT[1];
+                    CitraTiny2.Value = tinyMT[2];
+                    CitraTiny3.Value = tinyMT[3];
+
+                    CitraSaveVariable.Value = _gameState.GetSaveVariable;
+                    CitraTimeVariable.Value = _gameState.GetTimeVariable;
+                }
+                else
+                {
+                    CitraEggSeed2.Value = eggSeeds[2];
+                    CitraEggSeed3.Value = eggSeeds[3];
+                }
             }
         }
 
-        private GameState GetGameState(IDeviceRW citra)
+        private IManager GetGameState(IDeviceRW citra)
         {
             var gameVersion = Gameversion.SelectedItem.ToString();
 
             switch (gameVersion)
             {
+                case "X":
+                case "Y":
+                    return new ManagerXY(citra);
+                case "OR":
+                case "AS":
+                    return new ManagerOmegaRubyAlphaSapphire(citra);
                 case "Ultra Sun":
                 case "Ultra Moon":
-                    return new GameStateUltraSunUltraMoon(citra);
+                    return new ManagerUltraSunUltraMoon(citra);
                 default:
                     throw new NotImplementedException($"Game '{gameVersion}' is not (yet) supported!");
             }

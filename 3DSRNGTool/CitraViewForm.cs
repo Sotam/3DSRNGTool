@@ -6,19 +6,19 @@
     using System.Windows.Forms;
     using Citra;
     using PKHeX.Core;
-    using static Pk3DSRNGTool.StringItem;
+    using static StringItem;
 
 
     public partial class CitraViewForm : Form
     {
         public MainForm parentform => Program.mainform;
 
-        private readonly GameState _gameState;
+        private readonly IManager _gameState;
 
         private Gender _parent1Gender;
         private Gender _parent2Gender;
 
-        public CitraViewForm(GameState gameState)
+        public CitraViewForm(IManager gameState)
         {
             _gameState = gameState;
             InitializeComponent();
@@ -60,7 +60,7 @@
             }
         }
 
-        private void B_UpdatePokemons_Click(object sender, System.EventArgs e)
+        private void B_UpdatePokemons_Click(object sender, EventArgs e)
         {
             var pkms = _gameState.GetPokemon();
             var pkmControls = Controls.OfType<PokemonViewControl>();
