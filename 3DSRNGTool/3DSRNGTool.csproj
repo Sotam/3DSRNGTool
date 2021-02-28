@@ -10,9 +10,26 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Pk3DSRNGTool</RootNamespace>
     <AssemblyName>3DSRNGTool</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -23,6 +40,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,11 +50,30 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\FollowmeTogetic.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>75E1F44B03BB50C9D32314463C4D726813FCE9E7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>3DSRNGTool_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Magnetosphere">
+      <HintPath>Dependencies\Magnetosphere.dll</HintPath>
+    </Reference>
+    <Reference Include="PKHeX.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PKHeX.Core.20.10.11\lib\net46\PKHeX.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -51,6 +88,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CitraViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CitraViewForm.Designer.cs">
+      <DependentUpon>CitraViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Citra\IManager.cs" />
+    <Compile Include="Citra\Manager6.cs" />
+    <Compile Include="Citra\Manager7.cs" />
+    <Compile Include="Citra\ManagerOmegaRubyAlphaSapphire.cs" />
+    <Compile Include="Citra\ManagerUltraSunUltraMoon.cs" />
+    <Compile Include="Citra\ManagerXY.cs" />
     <Compile Include="Controls\Frame.cs" />
     <Compile Include="Controls\Frame_ID.cs" />
     <Compile Include="Controls\Frame_Misc.cs" />
@@ -99,6 +148,7 @@
     <Compile Include="Core\RNGPool.cs" />
     <Compile Include="Core\RNGResult.cs" />
     <Compile Include="Core\StationaryRNG.cs" />
+    <Compile Include="Exceptions\FrameOutOfRangeException.cs" />
     <Compile Include="Gen6\Egg6.cs" />
     <Compile Include="Gen6\Gen6Encounter\FishingArea.cs" />
     <Compile Include="Gen6\Gen6Encounter\HordeArea6.cs" />
@@ -146,6 +196,9 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForm_CitraRNG.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm_CtrlGroup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +211,13 @@
     <Compile Include="MainForm_Core.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PokemonViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PokemonViewControl.Designer.cs">
+      <DependentUpon>PokemonViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Citra\Lookup.cs" />
     <Compile Include="Pokemon\Lead.cs" />
     <Compile Include="Pokemon\PKX.cs" />
     <Compile Include="Pokemon\Pokemon.cs" />
@@ -172,6 +232,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RNG\CitraMT.cs" />
     <Compile Include="Subforms\Gen6MTSeedFinder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,14 +323,21 @@
     <Compile Include="Subforms\IVRange.Designer.cs">
       <DependentUpon>IVRange.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CitraViewForm.resx">
+      <DependentUpon>CitraViewForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokemonViewControl.resx">
+      <DependentUpon>PokemonViewControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="3DSRNGTool_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -379,6 +447,21 @@
     <None Include="Resources\pic\Buttons\Sync.png" />
     <None Include="Resources\pic\Buttons\Open.png" />
     <None Include="Resources\pic\Buttons\Reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dependencies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

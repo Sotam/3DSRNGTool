@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Drawing;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Pk3DSRNGTool.Controls;
-using Pk3DSRNGTool.RNG;
 using Pk3DSRNGTool.Core;
+using Pk3DSRNGTool.RNG;
 using static Pk3DSRNGTool.FormUtil;
 using static Pk3DSRNGTool.StringItem;
 
@@ -139,6 +139,20 @@ namespace Pk3DSRNGTool
 
             Profiles.ReadProfiles(); // Read all profiles
             RefreshProfile();
+
+            var message = "Steps:\r\n" +
+                          "1 Set fixed time of 2000-01-01 00:00:00 in Citra\r\n" +
+                          "2 Start game and advance to desired frame (e.g. 100) and press the \"A\"-button*\r\n" +
+                          "3 Use formula or use the value shown here\r\n" +
+                          "3.1 time_variable = (initial_seed - save_variable) & 0xffffffff\r\n" +
+                          "4 Use found save and time variable in 3DS Time Finder\r\n" +
+                          "5 Set time based on found results in 3DS Time Finder and advance to the same frame as of step 2\r\n" +
+                          "6 Result: you should've hit the seed after pressing the \"A\"-button*\r\n\r\n" +
+                          "NOTE:\r\n" +
+                          "* The base frame is the frame that an \"A\" press will lead to the game generating the seed. For X&Y this will be the first \"A\" press and for OR&AS this will be the second \"A\" press.";
+
+            TimeVariableToolTip.ToolTipTitle = "Tip";
+            TimeVariableToolTip.SetToolTip(Tip_TimeVar, message);
 
             Initializing = false;
         }
@@ -733,11 +747,15 @@ namespace Pk3DSRNGTool
 
             RNGMethod.TabPages[Method].Controls.Add(this.RNGInfo);
             RNGMethod.TabPages[Method].Controls.Add(this.Filters);
+            RNGMethod.TabPages[Method].Controls.Add(this.GB_CitraRNG);
             MainRNGEgg.Checked &= Method == 3;
             bool mainrngegg = Method == 3 && (MainRNGEgg.Checked || Gen6);
             RB_FrameRange.Checked = true;
 
-            // Contorls in RNGInfo
+            // Controls in CitraRNG
+            GB_EggRNG.Enabled = Method == 3 && _connected;
+
+            // Controls in RNGInfo
             AroundTarget.Visible = timedelaypanel.Visible = Method < 3 || mainrngegg;
             L_Correction.Visible = Correction.Visible = LinearDelay; // Not time-based shift
             L_Delay2.Visible = Delay2.Visible = gen7misc;
@@ -785,7 +803,12 @@ namespace Pk3DSRNGTool
             NoDex.Visible = Gen7 && Method == 1;
 
             GB_EggSeed.Visible =
-            RNGPanel.Visible = Gen6;
+            RNGPanel.Visible =
+            CitraTimeVariable.Visible =
+            CitraSaveVariable.Visible =
+            GB_TinyGen6.Visible =
+            Tip_TimeVar.Visible = Gen6;
+
             B_IVInput.Visible = Gen7 && ByIVs.Checked;
             Raining.Visible =
             L_NPC.Visible = NPC.Visible =
@@ -793,7 +816,9 @@ namespace Pk3DSRNGTool
             TinyMT_Status.Visible = Homogeneity.Visible =
             Lv_max.Visible = Lv_min.Visible = L_Lv.Visible = label9.Visible =
             GB_RNGGEN7ID.Visible =
-            Filter_G7TID.Visible = Gen7;
+            Filter_G7TID.Visible =
+            CitraEggSeed2.Visible =
+            CitraEggSeed3.Visible = Gen7;
 
             MM_CheckedChanged(null, null);
             CreateTimeline_CheckedChanged(null, null);

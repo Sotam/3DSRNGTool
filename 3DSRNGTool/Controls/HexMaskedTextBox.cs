@@ -18,6 +18,12 @@ namespace Pk3DSRNGTool.Controls
             set => Text = value.ToString("X" + Mask.Length.ToString());
         }
 
+        public ulong ValueUlong
+        {
+            get => ulong.TryParse(Text, System.Globalization.NumberStyles.HexNumber, null, out ulong value) ? value : 0;
+            set => Text = value.ToString("X" + Mask.Length.ToString());
+        }
+
         protected override void OnEnter(EventArgs e)
         {
             base.OnEnter(e);

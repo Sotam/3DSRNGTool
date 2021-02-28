@@ -134,7 +134,7 @@ namespace Pk3DSRNGTool.RNG
         public void Reseed(uint seed) => init(seed);
 
         public void Reseed(uint[] Key) => init_by_array(Key, Key.Length);
-        
+
         public uint Nextuint() => Generateuint();
 
         public void Next() => Generateuint();
@@ -211,7 +211,7 @@ namespace Pk3DSRNGTool.RNG
             _mt[0] = 0x80000000; /* MSB is 1; assuring non-zero initial array */
         }
     }
-    
+
     public class MersenneTwister_Fast // Little faster version, Modified by wwwwwwzx
     {
         /* Period parameters */
@@ -227,7 +227,7 @@ namespace Pk3DSRNGTool.RNG
         private static readonly uint[] _mag01 = { 0x0, MatrixA };
         private readonly uint[] _mt = new uint[N]; /* the array for the state vector  */
         private short _mti;
-        
+
         public MersenneTwister_Fast(uint seed)
         {
             init(seed);
